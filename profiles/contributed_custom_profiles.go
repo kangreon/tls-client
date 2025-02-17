@@ -3,8 +3,8 @@ package profiles
 import (
 	"math"
 
-	"github.com/bogdanfinn/fhttp/http2"
 	tls "github.com/bogdanfinn/utls"
+	"github.com/kangreon/fhttp/http2"
 )
 
 var ZalandoAndroidMobile = ClientProfile{

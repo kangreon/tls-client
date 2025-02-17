@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/http2"
 	"github.com/bogdanfinn/tls-client/bandwidth"
 	"github.com/bogdanfinn/tls-client/profiles"
 	tls "github.com/bogdanfinn/utls"
+	http "github.com/kangreon/fhttp"
+	"github.com/kangreon/fhttp/http2"
 	"golang.org/x/net/proxy"
 )
 
@@ -205,6 +205,8 @@ func (rt *roundTripper) dialTLS(ctx context.Context, network, addr string) (net.
 
 		if rt.transportOptions != nil {
 			t2.DisableCompression = rt.transportOptions.DisableCompression
+
+			t2.OnTLSConnected = rt.transportOptions.OnTLSConnected
 
 			t1 := t2.GetT1()
 			if t1 != nil {

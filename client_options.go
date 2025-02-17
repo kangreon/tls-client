@@ -3,12 +3,13 @@ package tls_client
 import (
 	"crypto/x509"
 	"fmt"
+	"github.com/kangreon/fhttp/http2"
 	"io"
 	"net"
 	"time"
 
-	http "github.com/bogdanfinn/fhttp"
 	"github.com/bogdanfinn/tls-client/profiles"
+	http "github.com/kangreon/fhttp"
 )
 
 type HttpClientOption func(config *httpClientConfig)
@@ -32,6 +33,7 @@ type TransportOptions struct {
 	ReadBufferSize         int   // If zero, a default (currently 4KB) is used.
 	DisableKeepAlives      bool
 	DisableCompression     bool
+	OnTLSConnected         func(client *http2.ClientConn)
 }
 
 type BadPinHandlerFunc func(req *http.Request)

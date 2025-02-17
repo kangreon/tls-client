@@ -13,10 +13,10 @@ import (
 
 	"github.com/bogdanfinn/tls-client/profiles"
 
-	http "github.com/bogdanfinn/fhttp"
-	"github.com/bogdanfinn/fhttp/http2"
 	tls_client "github.com/bogdanfinn/tls-client"
 	tls "github.com/bogdanfinn/utls"
+	http "github.com/kangreon/fhttp"
+	"github.com/kangreon/fhttp/http2"
 )
 
 func main() {

@@ -8,9 +8,9 @@ import (
 
 	"github.com/bogdanfinn/tls-client/profiles"
 
-	http "github.com/bogdanfinn/fhttp"
 	tls_client "github.com/bogdanfinn/tls-client"
 	tls "github.com/bogdanfinn/utls"
+	http "github.com/kangreon/fhttp"
 )
 
 func TestClients(t *testing.T) {

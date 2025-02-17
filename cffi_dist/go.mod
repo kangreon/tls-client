@@ -3,7 +3,7 @@ module tls_client_cffi
 go 1.22.0
 
 require (
-	github.com/bogdanfinn/fhttp v0.5.34
+	github.com/kangreon/fhttp v0.5.34-fix-1
 	github.com/bogdanfinn/tls-client v1.8.0
 	github.com/google/uuid v1.6.0
 )
