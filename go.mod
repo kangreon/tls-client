@@ -3,7 +3,6 @@ module github.com/kangreon/tls-client
 go 1.22.0
 
 require (
-	github.com/bogdanfinn/tls-client v1.8.0
 	github.com/bogdanfinn/utls v1.6.5
 	github.com/google/uuid v1.6.0
 	github.com/kangreon/fhttp v0.5.34-fix-1

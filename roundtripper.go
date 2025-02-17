@@ -9,11 +9,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bogdanfinn/tls-client/bandwidth"
-	"github.com/bogdanfinn/tls-client/profiles"
 	tls "github.com/bogdanfinn/utls"
 	http "github.com/kangreon/fhttp"
 	"github.com/kangreon/fhttp/http2"
+	"github.com/kangreon/tls-client/bandwidth"
+	"github.com/kangreon/tls-client/profiles"
 	"golang.org/x/net/proxy"
 )
 

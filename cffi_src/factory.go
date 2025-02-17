@@ -10,14 +10,14 @@ import (
 	"os"
 	"sync"
 
-	"github.com/bogdanfinn/tls-client/profiles"
+	"github.com/kangreon/tls-client/profiles"
 
-	tls_client "github.com/bogdanfinn/tls-client"
 	tls "github.com/bogdanfinn/utls"
 	"github.com/google/uuid"
 	http "github.com/kangreon/fhttp"
 	"github.com/kangreon/fhttp/cookiejar"
 	"github.com/kangreon/fhttp/http2"
+	tls_client "github.com/kangreon/tls-client"
 )
 
 var clientsLock = sync.Mutex{}

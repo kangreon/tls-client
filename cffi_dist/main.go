@@ -12,9 +12,9 @@ import (
 	"sync"
 	"unsafe"
 
-	tls_client_cffi_src "github.com/bogdanfinn/tls-client/cffi_src"
 	"github.com/google/uuid"
 	http "github.com/kangreon/fhttp"
+	tls_client_cffi_src "github.com/kangreon/tls-client/cffi_src"
 )
 
 var (

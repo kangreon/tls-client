@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	tls_client "github.com/bogdanfinn/tls-client"
-	"github.com/bogdanfinn/tls-client/profiles"
 	http "github.com/kangreon/fhttp"
+	tls_client "github.com/kangreon/tls-client"
+	"github.com/kangreon/tls-client/profiles"
 	"github.com/stretchr/testify/assert"
 )
 
