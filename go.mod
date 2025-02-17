@@ -5,7 +5,7 @@ go 1.22.0
 require (
 	github.com/bogdanfinn/utls v1.6.5
 	github.com/google/uuid v1.6.0
-	github.com/kangreon/fhttp v0.5.34-fix-1
+	github.com/kangreon/fhttp v0.5.34-fix-2
 	github.com/stretchr/testify v1.9.0
 	github.com/tam7t/hpkp v0.0.0-20160821193359-2b70b4024ed5
 	golang.org/x/net v0.31.0
@@ -13,7 +13,6 @@ require (
 
 require (
 	github.com/andybalholm/brotli v1.1.1 // indirect
-	github.com/bogdanfinn/fhttp v0.5.34 // indirect
 	github.com/cloudflare/circl v1.5.0 // indirect
 	github.com/davecgh/go-spew v1.1.1 // indirect
 	github.com/klauspost/compress v1.17.11 // indirect
